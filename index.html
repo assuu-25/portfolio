@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio — ASAD MIAH</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* Additional Skills Section Styling */
+
+.skills-highlight {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 34px;
+    padding: 22px;
+    border: 1px solid rgba(120, 255, 218, .18);
+    border-radius: 16px;
+    background: linear-gradient(
+        135deg,
+        rgba(111, 105, 255, .12),
+        rgba(90, 255, 208, .06)
+    );
+}
+
+.skills-highlight-icon {
+    display: grid;
+    place-items: center;
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    color: #72f5d1;
+    background: rgba(114, 245, 209, .12);
+    font-size: 21px;
+}
+
+.skills-highlight-title {
+    margin-bottom: 7px;
+    color: #f0efff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills-highlight p {
+    margin: 0;
+    color: #a7a8bb;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.skills-focus {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.skills-focus span {
+    padding: 7px 11px;
+    border: 1px solid rgba(145, 145, 190, .2);
+    border-radius: 999px;
+    color: #c9c9dd;
+    background: rgba(255, 255, 255, .025);
+    font-size: 11px;
+    letter-spacing: .02em;
+}
+
+.soft-skills-card {
+    grid-column: 1 / -1;
+}
+
+.soft-skills-card .sk-chips {
+    max-width: 760px;
+}
+
+@media (max-width: 640px) {
+
+    .skills-highlight {
+        padding: 17px;
+    }
+
+    .soft-skills-card {
+        grid-column: auto;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <a href="#hero" class="nav-logo">
+        ASAD MIAH<span>.</span>
+    </a>
+
+    <ul class="nav-links">
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Awards</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section id="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <span class="dot-pulse"></span>
+                Open to internships &amp; opportunities
+            </div>
+
+            <h1 class="hero-name">
+
+                Asad<br>
+
+                <span class="line-ghost">
+                    _ <span class="hl">Miah.</span>
+                </span>
+
+            </h1>
+
+            <p class="hero-sub">
+                CSE Student &amp; Aspiring AI/ML Developer building
+                practical, intelligent solutions, one line of code at a time.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#projects" class="btn-glow">
+                    View My Work →
+                </a>
+
+                <a href="#contact" class="btn-ghost">
+                    Get In Touch
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <div class="stat-num">3<em>+</em></div>
+                    <div class="stat-lbl">Years Studying</div>
+                </div>
+
+                <div>
+                    <div class="stat-num">4<em>+</em></div>
+                    <div class="stat-lbl">Projects Built</div>
+                </div>
+
+                <div>
+                    <div class="stat-num">3<em>+</em></div>
+                    <div class="stat-lbl">Major Awards</div>
+                </div>
+
+                <div>
+                    <div class="stat-num">🚀</div>
+                    <div class="stat-lbl">AI &amp; ML Focus</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-scroll">
+
+        <div class="scroll-line"></div>
+        <span class="scroll-label">Scroll</span>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-visual reveal">
+
+                <div class="about-card">
+
+                    <div class="about-card-label">
+
+                        <img
+                            src="img_asd.jpeg"
+                            alt="Asad Miah"
+                            style="width:100%; height:100%; object-fit:cover; border-radius:inherit;"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="floating-badge fb-top">
+
+                    <span class="fb-dot"></span>
+                    <span class="fb-text">Available Now</span>
+
+                </div>
+
+                <div class="floating-badge fb-bot">
+
+                    <div class="fb-num">AI</div>
+                    <div class="fb-label">Developer</div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <div class="sec-eyebrow">About Me</div>
+
+                <h2 class="sec-title">
+                    Turning ideas<br>into <em>reality.</em>
+                </h2>
+
+                <p>
+                    I'm a 3rd-year CSE student at United International
+                    University passionate about AI, machine learning,
+                    and full-stack development. I love building practical
+                    systems through coursework and hackathons—including
+                    ML recommenders and AI disease detection tools.
+                </p>
+
+                <p>
+                    When I'm not coding, you'll find me traveling,
+                    playing indoor/outdoor games, or engaging with
+                    university clubs like Computer, Robotics, and Sports clubs.
+                </p>
+
+                <div class="info-grid">
+
+                    <div class="info-cell">
+                        <div class="ic-label">University</div>
+                        <div class="ic-val">
+                            United International University
+                        </div>
+                    </div>
+
+                    <div class="info-cell">
+                        <div class="ic-label">Major</div>
+                        <div class="ic-val">
+                            BSc. in Computer Science & Engineering
+                        </div>
+                    </div>
+
+                    <div class="info-cell">
+                        <div class="ic-label">Year</div>
+                        <div class="ic-val">
+                            3rd Year (8th Trimester)
+                        </div>
+                    </div>
+
+                    <div class="info-cell">
+                        <div class="ic-label">Location</div>
+                        <div class="ic-val">
+                            Dhaka, Bangladesh
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION SECTION -->
+
+<section id="education">
+
+    <div class="container">
+
+        <div class="edu-header reveal">
+
+            <div class="sec-eyebrow">Education</div>
+
+            <h2 class="sec-title">
+                Academic<br>Background.
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="tl-entry">
+
+                <div class="tl-node"></div>
+
+                <div class="tl-card">
+
+                    <div class="tl-period">2024 — Present</div>
+
+                    <div class="tl-degree">
+                        B.Sc. in Computer Science &amp; Engineering
+                    </div>
+
+                    <div class="tl-school">
+                        📍 United International University, Dhaka, Bangladesh
+                    </div>
+
+                    <div class="tl-note">
+                        Relevant coursework: Machine Learning,
+                        Artificial Intelligence, Data Structures & Algorithms,
+                        Database Management Systems, Software Engineering,
+                        Computer Networks.
+                    </div>
+
+                    <div class="tl-badges">
+
+                        <span class="tl-badge">Ongoing</span>
+                        <span class="tl-badge">UIU</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tl-entry">
+
+                <div class="tl-node"></div>
+
+                <div class="tl-card">
+
+                    <div class="tl-period">2022</div>
+
+                    <div class="tl-degree">
+                        Higher Secondary Certificate (HSC)
+                    </div>
+
+                    <div class="tl-school">
+                        📍 Govt. Rajendra College, Faridpur · Science Group
+                    </div>
+
+                    <div class="tl-note">
+                        GPA: 5.00/5.00. Focus on Physics, Chemistry,
+                        Mathematics and Higher Mathematics.
+                    </div>
+
+                    <div class="tl-badges">
+
+                        <span class="tl-badge">GPA 5.00</span>
+                        <span class="tl-badge">Science</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="tl-entry">
+
+                <div class="tl-node"></div>
+
+                <div class="tl-card">
+
+                    <div class="tl-period">2020</div>
+
+                    <div class="tl-degree">
+                        Secondary School Certificate (SSC)
+                    </div>
+
+                    <div class="tl-school">
+                        📍 Charvhadrasan Pilot High School, Faridpur · Science Group
+                    </div>
+
+                    <div class="tl-note">
+                        GPA: 5.00/5.00. Awarded merit scholarship
+                        for academic excellence.
+                    </div>
+
+                    <div class="tl-badges">
+
+                        <span class="tl-badge">GPA 5.00</span>
+                        <span class="tl-badge">Science</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS SECTION -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="sec-eyebrow">Skills</div>
+
+            <h2 class="sec-title">
+                What I Work<br>With.
+            </h2>
+
+        </div>
+
+
+        <div class="skills-layout">
+
+
+            <!-- SKILLS INTRO -->
+
+            <div class="skills-intro">
+
+                <p>
+                    I've built a robust skill set spanning software
+                    development, machine learning frameworks,
+                    backend technologies, and modern web environments.
+                </p>
+
+
+                <div class="skills-highlight">
+
+                    <span class="skills-highlight-icon">✦</span>
+
+                    <div>
+
+                        <div class="skills-highlight-title">
+                            Curious by nature. Driven by building.
+                        </div>
+
+                        <p>
+                            I enjoy exploring new technologies,
+                            solving meaningful problems, collaborating
+                            with others, and turning ideas into useful
+                            digital experiences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="skills-focus">
+
+                    <span>AI &amp; Machine Learning</span>
+
+                    <span>Full-Stack Development</span>
+
+                    <span>Backend Development</span>
+
+                    <span>Continuous Learning</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- TECHNICAL SKILL CARDS -->
+
+            <div class="skills-cards">
+
+
+                <!-- Programming Languages -->
+
+                <div class="sk-card">
+
+                    <div class="sk-icon">⚡</div>
+
+                    <div class="sk-cat">Languages</div>
+
+                    <div class="sk-name">Programming</div>
+
+                    <div class="sk-chips">
+
+                        <span class="chip">Python</span>
+                        <span class="chip">Java</span>
+                        <span class="chip">C/C++</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">PHP</span>
+                        <span class="chip">SQL</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI and Machine Learning -->
+
+                <div class="sk-card">
+
+                    <div class="sk-icon">🤖</div>
+
+                    <div class="sk-cat">ML &amp; Data</div>
+
+                    <div class="sk-name">Data Stack</div>
+
+                    <div class="sk-chips">
+
+                        <span class="chip">Scikit-learn</span>
+                        <span class="chip">NumPy</span>
+                        <span class="chip">Pandas</span>
+                        <span class="chip">Matplotlib</span>
+                        <span class="chip">Hugging Face</span>
+                        <span class="chip">Ollama</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Web Development and Tools -->
+
+                <div class="sk-card">
+
+                    <div class="sk-icon">🌐</div>
+
+                    <div class="sk-cat">Web &amp; Tools</div>
+
+                    <div class="sk-name">Development</div>
+
+                    <div class="sk-chips">
+
+                        <span class="chip">Spring Boot</span>
+                        <span class="chip">Node.js</span>
+                        <span class="chip">React</span>
+                        <span class="chip">HTML/CSS</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">Streamlit</span>
+                        <span class="chip">Git</span>
+                        <span class="chip">Figma</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Spoken Languages -->
+
+                <div class="sk-card">
+
+                    <div class="sk-icon">🗣️</div>
+
+                    <div class="sk-cat">Languages</div>
+
+                    <div class="sk-name">Spoken</div>
+
+                    <div class="sk-chips">
+
+                        <span class="chip">Bengali (Native)</span>
+                        <span class="chip">English (Professional)</span>
+                        <span class="chip">Hindi (Conversational)</span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Professional Strengths -->
+
+                <div class="sk-card soft-skills-card">
+
+                    <div class="sk-icon">🤝</div>
+
+                    <div class="sk-cat">People &amp; Mindset</div>
+
+                    <div class="sk-name">
+                        Professional Strengths
+                    </div>
+
+                    <div class="sk-chips">
+
+                        <span class="chip">Communication</span>
+
+                        <span class="chip">Teamwork</span>
+
+                        <span class="chip">Collaboration</span>
+
+                        <span class="chip">Problem Solving</span>
+
+                        <span class="chip">Adaptability</span>
+
+                        <span class="chip">Time Management</span>
+
+                        <span class="chip">Critical Thinking</span>
+
+                        <span class="chip">Active Listening</span>
+
+                        <span class="chip">Friendly &amp; Cooperative</span>
+
+                        <span class="chip">Leadership</span>
+
+                        <span class="chip">Creativity</span>
+
+                        <span class="chip">Willingness to Learn</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROJECTS SECTION -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="sec-eyebrow">Projects</div>
+
+            <h2 class="sec-title">
+                Things I've<br>Built.
+            </h2>
+
+        </div>
+
+
+        <div class="proj-grid">
+
+
+            <!-- PROJECT 1 -->
+
+            <div class="proj-card hero-card">
+
+                <div class="proj-thumb proj-color-1">
+
+                    <div class="proj-thumb-inner">
+
+                        🎬
+
+                        <div class="proj-num">01</div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="proj-body">
+
+                    <div class="proj-meta">
+
+                        <span class="proj-type">
+                            Featured ML Project
+                        </span>
+
+                        <span class="proj-yr">2026</span>
+
+                    </div>
+
+
+                    <h3 class="proj-title">
+                        Movie Recommendation System
+                    </h3>
+
+
+                    <p class="proj-desc">
+                        End-to-end ML recommendation engine built on
+                        9,742 movies and 100K+ ratings, comparing
+                        collaborative filtering, content-based (TF-IDF),
+                        and SVD matrix factorization with an interactive
+                        Streamlit dashboard.
+                    </p>
+
+
+                    <div class="proj-stack">
+
+                        <span class="stk">Python</span>
+                        <span class="stk">Scikit-learn</span>
+                        <span class="stk">Pandas</span>
+                        <span class="stk">Streamlit</span>
+
+                    </div>
+
+
+                    <div class="proj-links">
+
+                        <a href="https://movie-recommendation75.streamlit.app/"
+                           class="proj-lnk">
+                            ⬡ Live Demo
+                        </a>
+
+                        <a href="https://github.com/assuu-25/-Machine-Learning-Based-___Movie-Recommendations"
+                           class="proj-lnk">
+                            ⌥ GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 2 -->
+
+            <div class="proj-card">
+
+                <div class="proj-thumb proj-color-2">
+
+                    <div class="proj-thumb-inner">
+
+                        🩺
+
+                        <div class="proj-num">02</div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="proj-body">
+
+                    <div class="proj-meta">
+
+                        <span class="proj-type">AI Web App</span>
+
+                        <span class="proj-yr">2026</span>
+
+                    </div>
+
+
+                    <h3 class="proj-title">
+                        AI Skin Disease Detection
+                    </h3>
+
+
+                    <p class="proj-desc">
+                        AI-powered web application that analyzes skin
+                        images to suggest possible conditions with
+                        specialist recommendations and early screening support.
+                    </p>
+
+
+                    <div class="proj-stack">
+
+                        <span class="stk">Python</span>
+                        <span class="stk">AI/ML</span>
+                        <span class="stk">Web UI</span>
+
+                    </div>
+
+
+                    <div class="proj-links">
+
+                        <a href="https://ghurteaschi.streamlit.app/"
+                           class="proj-lnk">
+                            ⬡ Demo
+                        </a>
+
+                        <a href="https://github.com/assuu-25/hackathon"
+                           class="proj-lnk">
+                            ⌥ GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROJECT 3 -->
+
+            <div class="proj-card">
+
+                <div class="proj-thumb proj-color-3">
+
+                    <div class="proj-thumb-inner">
+
+                        🛒
+
+                        <div class="proj-num">03</div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="proj-body">
+
+                    <div class="proj-meta">
+
+                        <span class="proj-type">E-Commerce</span>
+
+                        <span class="proj-yr">2025</span>
+
+                    </div>
+
+
+                    <h3 class="proj-title">
+                        N.R. Market
+                    </h3>
+
+
+                    <p class="proj-desc">
+                        Full-featured responsive online marketplace
+                        with product browsing, cart management,
+                        and seamless checkout built using a PHP
+                        REST API backend, JavaScript frontend,
+                        and MySQL database.
+                    </p>
+
+
+                    <div class="proj-stack">
+
+                        <span class="stk">PHP</span>
+                        <span class="stk">JavaScript</span>
+                        <span class="stk">MySQL</span>
+
+                    </div>
+
+
+                    <div class="proj-links">
+
+                        <a href="https://assuu-25.github.io/nrmarket/"
+                           class="proj-lnk">
+                            ⬡ Demo
+                        </a>
+
+                        <a href="https://github.com/assuu-25/nrmarket"
+                           class="proj-lnk">
+                            ⌥ GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS SECTION -->
+
+<section id="achievements">
+
+    <div class="container">
+
+        <div class="reveal">
+
+            <div class="sec-eyebrow">Achievements</div>
+
+            <h2 class="sec-title">
+                Honors &amp;<br>Recognition.
+            </h2>
+
+        </div>
+
+
+        <div class="ach-grid">
+
+
+            <div class="ach-card">
+
+                <div class="ach-icon">🏆</div>
+
+                <div class="ach-body">
+
+                    <div class="ach-title">
+                        2nd Place — Build with Gemma @ Bangladesh Hackathon
+                    </div>
+
+                    <div class="ach-detail">
+                        Won with Team Ghurte Aschi.
+                    </div>
+
+                    <span class="ach-tag">2026</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="ach-card">
+
+                <div class="ach-icon">🏆</div>
+
+                <div class="ach-body">
+
+                    <div class="ach-title">
+                        4th Runner-up — UIU CSE Project Show
+                    </div>
+
+                    <div class="ach-detail">
+                        Function Generator device · Electronics Laboratory · Fall 2025.
+                    </div>
+
+                    <span class="ach-tag">Fall 2025</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="ach-card">
+
+                <div class="ach-icon">🎓</div>
+
+                <div class="ach-body">
+
+                    <div class="ach-title">
+                        DataCamp License Recipient
+                    </div>
+
+                    <div class="ach-detail">
+                        Awarded premium DataCamp access for continuous
+                        data science skill progression.
+                    </div>
+
+                    <span class="ach-tag">2026</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-wrap reveal">
+
+            <div class="sec-eyebrow">Contact</div>
+
+            <h2 class="sec-title">
+                Let's Build<br><em>Something.</em>
+            </h2>
+
+
+            <p>
+                Whether it's an internship, collaboration,
+                or just a conversation — I'd love to hear from you.
+                My inbox is always open.
+            </p>
+
+
+            <div class="contact-cards">
+
+
+                <a href="mailto:mdniloyahmedasad75@gmail.com"
+                   class="cc">
+
+                    <span class="cc-icon">✉️</span>
+
+                    <div class="cc-info">
+
+                        <div class="cc-lbl">Email</div>
+
+                        <div class="cc-val">
+                            mdniloyahmedasad75@gmail.com
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <a href="https://www.facebook.com/share/19LNrZauri/"
+                   class="cc">
+
+                    <span class="cc-icon">📘</span>
+
+                    <div class="cc-info">
+
+                        <div class="cc-lbl">Facebook</div>
+
+                        <div class="cc-val">Asad Miah</div>
+
+                    </div>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/asad-miah112502"
+                   class="cc">
+
+                    <span class="cc-icon">💼</span>
+
+                    <div class="cc-info">
+
+                        <div class="cc-lbl">LinkedIn</div>
+
+                        <div class="cc-val">
+                            linkedin.com/in/asad-miah112502
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <a href="https://github.com/assuu-25"
+                   class="cc">
+
+                    <span class="cc-icon">⌥</span>
+
+                    <div class="cc-info">
+
+                        <div class="cc-lbl">GitHub</div>
+
+                        <div class="cc-val">
+                            github.com/assuu-25
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                <a href="https://www.kaggle.com/asadmiah"
+                   class="cc">
+
+                    <span class="cc-icon">📊</span>
+
+                    <div class="cc-info">
+
+                        <div class="cc-lbl">Kaggle</div>
+
+                        <div class="cc-val">
+                            kaggle.com/asadmiah
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+
+            <a href="Asad_Miah_CV.pdf"
+               class="btn-glow"
+               style="display:inline-flex">
+
+                Download Resume ↓
+
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="f-copy">
+        © 2026 Asad Miah. All rights reserved.
+    </div>
+
+
+    <div class="f-links">
+
+        <a href="https://github.com/assuu-25">GitHub</a>
+
+        <a href="https://www.linkedin.com/in/asad-miah112502">
+            LinkedIn
+        </a>
+
+        <a href="mailto:mdniloyahmedasad75@gmail.com">
+            Email
+        </a>
+
+        <a href="https://www.facebook.com/share/19LNrZauri/">
+            Facebook
+        </a>
+
+        <a href="https://www.kaggle.com/asadmiah">
+            Kaggle
+        </a>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
